@@ -40,4 +40,5 @@ Techs:
  - Dotenv
  - Typescript
  - Bcrypt.js
+ - Vitest
 

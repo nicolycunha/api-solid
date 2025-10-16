@@ -42,3 +42,4 @@ Techs:
  - Bcrypt.js
  - Vitest
  - Dayjs
+ - Supertest

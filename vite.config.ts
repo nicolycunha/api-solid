@@ -5,6 +5,11 @@ export default defineConfig({
   plugins: [tsconfigPaths()],
   test: {
     dir: 'src',
+    setupFiles: ['./vitest.setup.ts'],
+    pool: process.env.CI ? 'forks' : 'threads',
+    hookTimeout: 20000,
+    teardownTimeout: 10000,
+
     projects: [
       {
         extends: true,
